@@ -1,0 +1,31 @@
+---
+title: "Estatística Aplicada à Ecologia usando o R"
+author: "Diogo Proietti, Fernando R. da Silva, Thiago Gonçalves-Souza (em ordem alfabética)"
+date: "`r Sys.Date()`"
+site: bookdown::bookdown_site
+output: bookdown::gitbook
+documentclass: book
+bibliography: [book.bib, packages.bib]
+biblio-style: apalike
+link-citations: yes
+description: "Esta é a apostila de apoio para o curso de pós-graduação em Biologia Animal, ela contém exercícios e exemplos."
+---
+
+#Prefácio
+
+Esta apostila foi elaborada para servir como material de apoio para um curso ministrado no [PPG Biolgia Animal da UNESP de S.J. Rio Preto](http://www.ibilce.unesp.br/#!/pos-graduacao/programas-de-pos-graduacao/biologia-animal/apresentacao/). 
+
+Nossa proposta com o curso e com esta apostila é de traçar o melhor caminho entre questões ecológicas e os métodos estatísticos para testá-las. Guiar seus passos nesse caminho (nem sempre linear) necessita que você utilize um requisito básico: o de utilizar seu esforço para caminhar. O nosso esforço, em contrapartida, será o de segurar suas mãos, mantêlo de pé e indicar as melhores direções para que adquira certa independência em análises ecológicas. Todo o material utilizado durante este curso, incluindo dados e slides das aulas, está disponível em nosso site no [Github]() e no [site do Diogo Provete](http://diogoprovete.weebly.com/teaching.html). Um dos nossos
+objetivos é mostrar que o conhecimento de teorias ecológicas e a utilização de questões apropriadas são o primeiro passo na caminha rumo à compreensão da lógica estatística. Não deixe que a estatística se torne a “pedra no seu caminho”. 
+
+Em nossa opinião, programas com ambiente de programação favorecem o entendimento da lógica estatística, uma vez que cada passo (lembre-se de que você está caminhado em uma estrada desconhecida) precisa ser
+coordenado, ou seja, as linhas de comando (detalhes abaixo) precisam ser compreendidas para que você teste suas hipóteses.
+
+A primeira parte desta apostila pretende utilizar uma estratégia que facilita a escolha do teste estatístico apropriado, por meio da seleção de questões/hipóteses claras e da ligação dessas hipóteses com a teoria e o método. Posteriormente, é necessário transferir o contexto ecológico para um contexto meramente estatístico (hipótese nula/alternativa). A partir da definição de sua hipótese nula partiremos para a aplicação de cada teste estatístico (de modelos lineares generalizados à análises multivariadas) utilizando como plataforma o programa R. Antes de detalhar cada análise estatística, apresentaremos os comandos básicos para a utilização do R e os tipos de distribuição estatística que são essenciais
+para o desenvolvimento do curso. Para isso, organizamos um esquema que chamamos de “estrutura lógica” que facilita a compreensão dos passos necessários para testar suas hipóteses ![Figura 1](figures/figura-1.jpg).
+
+É sempre bom ter em mente que
+
+>é muito importante saber aonde se quer chegar
+>para poder escolher o que fazer.
+
